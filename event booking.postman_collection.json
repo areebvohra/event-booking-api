@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "8d2047eb-e300-48f3-9849-cec90796c20d",
+		"name": "event booking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8272367"
+	},
+	"item": [
+		{
+			"name": "Get all events",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/events",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add booking",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"event_name\": \"Bell Witch\",\n  \"username\": \"areeb vohra\",\n  \"email\": \"areebvohra@gmail.com\",\n  \"no_of_tickets\": 5,\n  \"eventId\": \"2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/booking",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"booking"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost:3000"
+		}
+	]
+}
