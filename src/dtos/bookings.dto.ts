@@ -1,4 +1,4 @@
-import { IsString, IsNotEmpty } from 'class-validator';
+import { IsString, IsNotEmpty, IsNumber } from 'class-validator';
 
 export class CreateBookingDto {
     @IsString()
@@ -13,9 +13,9 @@ export class CreateBookingDto {
     @IsNotEmpty()
     public email: string;
 
-    @IsString()
+    @IsNumber()
     @IsNotEmpty()
-    public no_of_tickets: string;
+    public no_of_tickets: number;
 
     @IsString()
     @IsNotEmpty()

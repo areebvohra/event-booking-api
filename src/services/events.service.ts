@@ -8,27 +8,27 @@ export class EventService {
         const eventList = [
             {
                 "id": "1", "name": "Bell Witch",
-                "image": "../../assets/images/1.png",
+                "image": "assets/1.png",
                 "date": "2023-09-25", "location": "The Park Theatre", "price": "$35.00"
             },
             {
                 "id": "2", "name": "Ten Foot Pole",
-                "image": "../../assets/images/2.png",
+                "image": "assets/2.png",
                 "date": "2023-09-26", "location": "The Park Theatre", "price": "$25.16"
             },
             {
                 "id": "3", "name": "Great Lake Swimmers",
-                "image": "../../assets/images/3.png",
+                "image": "assets/3.png",
                 "date": "2023-09-29", "location": "The Park Theatre", "price": "$22.50"
             },
             {
                 "id": "4", "name": "Good Riddance & Choke",
-                "image": "../../assets/images/4.png",
+                "image": "assets/4.png",
                 "date": "2023-09-30", "location": "The Park Theatre", "price": "$35.96"
             },
             {
                 "id": "5", "name": "Protest the Hero",
-                "image": "../../assets/images/5.png",
+                "image": "assets/5.png",
                 "date": "2023-10-06", "location": "The Park Theatre", "price": "$25.16"
             }
         ]

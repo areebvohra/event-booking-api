@@ -7,7 +7,6 @@ import { Booking } from '@/interfaces/bookings.interface';
 export class BookingService {
 
     public async createBooking(bookingData: Booking): Promise<Booking> {
-
         const booking: Booking = bookingData;
         return booking;
     }

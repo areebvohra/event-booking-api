@@ -59,7 +59,7 @@ definitions:
         type: string
         description: Register Email
       no_of_tickets:
-        type: string
+        type: number
         description: Number of tickets
       eventId:
         type: string
