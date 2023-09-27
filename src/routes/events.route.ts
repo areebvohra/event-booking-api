@@ -6,7 +6,7 @@ import { ValidationMiddleware } from '@middlewares/validation.middleware';
 import { CreateBookingDto } from '@/dtos/bookings.dto';
 
 export class EventRoute implements Routes {
-  public path = '/api';
+  public path = '';
   public router = Router();
   public event = new EventController();
   public booking = new BookingController();
@@ -17,6 +17,6 @@ export class EventRoute implements Routes {
 
   private initializeRoutes() {
     this.router.get(`${this.path}/events`, this.event.getEvents);
-    this.router.post(`${this.path}/book`, ValidationMiddleware(CreateBookingDto), this.booking.createBooking);
+    this.router.post(`${this.path}/booking`, ValidationMiddleware(CreateBookingDto), this.booking.createBooking);
   }
 }
